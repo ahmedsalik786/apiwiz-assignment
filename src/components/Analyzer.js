@@ -56,7 +56,6 @@ const Analyzer = () => {
   });
   const [isWordSeleced, setIsWordSeleced] = useState();
 
-  // Adjust calculateMetrics to accept an input parameter for current calculation
   const calculateMetrics = (currentInput) => {
     const charCount = currentInput.length;
     const wordCount = currentInput

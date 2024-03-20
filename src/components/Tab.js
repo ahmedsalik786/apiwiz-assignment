@@ -8,10 +8,6 @@ const WordInput = ({ input, setInput, calculateMetrics }) => {
         type="text"
         value={input}
         placeholder="Type a Note..."
-        onChange={(e) => {
-          setInput(e.target.value);
-          calculateMetrics(e.target.value);
-        }}
       />
     </div>
   );
@@ -23,10 +19,6 @@ const ParaInput = ({ input, setInput, calculateMetrics }) => (
       className="paraInput"
       value={input}
       placeholder="Type or copy/paste your content here."
-      onChange={(e) => {
-        setInput(e.target.value);
-        calculateMetrics(e.target.value);
-      }}
     ></textarea>
   </div>
 );
